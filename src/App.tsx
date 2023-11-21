@@ -13,14 +13,14 @@ function App() {
       showCalendar()
     }
   }
-  return <div><ListGroup items={items} onSelectItem={handleSelectedItem} /></div>
+  return <div><ListGroup items={items} heading="" onSelectItem={handleSelectedItem} /></div>
 
 
 }
 
 function showCalendar() {
   render(
-    <div><img src="https://cdn.generalblue.com/calendar/2023-11-november-calendar-red-sunday-start-en-ph-712x550.png" alt="" srcset="" /></div>,
+    <div><img src="https://cdn.generalblue.com/calendar/2023-11-november-calendar-red-sunday-start-en-ph-712x550.png" alt="" /></div>,
     document.getElementById('content')
   );
 }
