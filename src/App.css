@@ -2,3 +2,38 @@
     background-color: rgba(0, 102, 204, 0.847);
 
 }
+
+body {
+    width: 100%;
+    background-image: url('/Resources/Mapua-Malayan-Rizal-Building.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.redBigButton {
+    width: 100%;
+    padding: 1em;
+    background-color: red;
+}
+
+.textbar {
+    width: 25em;
+    height: 2.5em;
+}
+
+.thumbnail {
+    width: 20em;
+
+}
+
+.infoContent {
+    margin-top: 25em;
+    margin-bottom: 3em;
+}
+
+.infoBox {
+    background-color: midnightblue;
+
+    margin-right: 1em;
+    margin-left: 2em;
+}

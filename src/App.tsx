@@ -1,106 +1,73 @@
-import ListGroup from "./components/ListGroup";
 import { render } from 'react-dom';
+import { BsBackpack2 } from "react-icons/bs";
+import { FcConferenceCall } from "react-icons/fc";
+import { FcLock } from "react-icons/fc";
 function App() {
-  let items = ["Home", "Courses", "Announcements", "Messages", "Calendar"]
 
-  const handleSelectedItem = (item: string) => {
-
-    if (item == "Courses") {
-      showCourses()
-    } else if (item == "Announcements") {
-      showAnnouncements()
-    } else if (item == "Calendar") {
-      showCalendar()
-    }
-  }
-  return <div><ListGroup items={items} heading="" onSelectItem={handleSelectedItem} /></div>
-
-
-}
-
-function showCalendar() {
-  render(
-    <div><img src="https://cdn.generalblue.com/calendar/2023-11-november-calendar-red-sunday-start-en-ph-712x550.png" alt="" /></div>,
-    document.getElementById('content')
-  );
-}
-
-function showCourses() {
-  render(
-    renderCoursesTable(),
-    document.getElementById('content')
-  );
-}
-
-function showAnnouncements() {
-  render(
-    renderAnnouncements(),
-    document.getElementById('content')
-  );
-}
-
-function renderAnnouncements() {
   return (
-    <div>
-      <h1>ANNOUNCEMENTS</h1>
-      <div>
-        <h2>dummy message</h2>
-        <div>
-          <h3>Dummy Title</h3>
-          <p>Dummy Text</p>
+    <div >
+      <div className=" text-center" >
+        <img src="./Resources/MITL-Logo.png" alt="niggers" />
+      </div>
+      <br /><br /><br /><br />
+      <div className=" row ">
+        <div className="col infoBox text-center">
+          <br />
+          <br />
+          <h5 className="text-white pb-1 pt-5">Welcome to</h5>
+          <img src="./Resources/mapua-mcl-online-access-logo.png" alt="" className="thumbnail" />
+          <p className="text-white">powered by yanussyEngine</p>
+          <button className="redBigButton mt-5 text-white" onClick={lipat}>View Course Catalog</button>
+          <br />
+          <br />
+          <br />
         </div>
-        <div>
-          <h3>Dummy Title</h3>
-          <p>Dummy Text</p>
+        <div className="col infoBox text-center">
+          <br />
+
+          <h2 className="pt-5 text-white">Login to Mapua MCL Blackboard</h2>
+          <div className="flex mt-5 text-start">
+            <div className="row">
+              <div className="col-1"><FcConferenceCall /></div>
+              <div className="col">
+                <h4 className="text-white ">Username</h4>
+                <input type="email" className="textbar mb-3" />
+              </div>
+
+            </div>
+            <div className="row">
+              <div className="col-1"><FcLock /></div>
+              <div className="col-8">
+                <h4 className="text-white">Password</h4>
+                <input type="password" className="textbar" />
+              </div>
+
+            </div>
+            <button className="redBigButton mt-3 text-white" onClick={lipat}>Login</button>
+
+          </div>
         </div>
-        <div>
-          <h3>Dummy Title</h3>
-          <p>Dummy Text</p>
+        <div className="col infoBox text-center">
+          <br />
+
+          <h2 className="pt-5 text-white">Links</h2>
+
+          <button className="redBigButton mt-5 text-white" onClick={lipat}>OneMCL</button>
+          <p className="text-white">ballsballsballsballsballsballsballsballsballsballsballsballsballsballsballsballs</p>
+          <button className="redBigButton mt-1 text-white" onClick={lipat}>BlackBoard App</button>
+          <p className="text-white">ballsballsballsballsballsballsballsballsballsballsballsballsballsballsballsballs</p>
         </div>
       </div>
+
     </div>
+
+
   )
+
 }
 
-function renderCoursesTable() {
-  return (
-    <div>
-      <h1>Hello</h1>
-      <div className="container">
-        <table className="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-  )
+function lipat() {
+  window.location = "https://x.com/Zeamilky/status/1726968167283806383?s=20"
 }
 
 export default App;
